@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/loadingView"
+        tools:visibility="gone"
+        layout="@layout/view_loading_spinner" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:backgroundTint="@color/white"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include
+                android:id="@+id/header"
+                layout="@layout/view_ride_details_header" />
+
+            <androidx.fragment.app.FragmentContainerView
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                tools:context=".MapsActivity" />
+
+            <TextView
+                android:id="@+id/seriesText"
+                android:text="@string/series_description"
+                android:textStyle="italic"
+                android:textSize="14sp"
+                android:layout_margin="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <include
+                android:id="@+id/seriesDivider"
+                layout="@layout/view_divider"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"/>
+
+            <LinearLayout
+                android:id="@+id/waypointInfoLayout"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tripDetails"
+                android:padding="16dp"
+                tools:text="Trip ID:af5d050caaa63f • 18.48 mi • 50 min"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/cancel_button"
+                android:background="@drawable/button_outline"
+                android:textColor="@color/cancel_trip_button_color"
+                android:layout_margin="2dp"
+                style="@style/ButtonStyle"
+                android:text="@string/cancel_this_trip_button_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>
+

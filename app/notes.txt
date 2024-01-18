@@ -1,0 +1,7 @@
+It's unclear whether trips that start the prior day and end the next day are counted for the day
+prior or the day the trip ends. I chose to select the day that the trip ends as the day that trip is
+counted for, but it would be trivial to update the code to base it on the day the trip starts.
+
+For the My Rides page, the header items are just part of the recycler view items, but could be
+improved to be sticky headers that stay at the top until they are replaced by another day.
+

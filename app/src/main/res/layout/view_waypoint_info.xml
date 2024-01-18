@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/icon"
+            android:padding="12dp"
+            tools:src="@drawable/icon_drop_off"
+            android:contentDescription="@string/waypoint_type_icon_description"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/waypointAnchor"
+            tools:text="Pickup"
+            style="@style/TripHeaderStartTimeStyle"
+            android:layout_marginStart="4dp"
+            app:layout_constraintStart_toEndOf="@id/icon"
+            app:layout_constraintTop_toTopOf="@id/icon"
+            app:layout_constraintBottom_toBottomOf="@id/icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/waypointAddress"
+            tools:text="1 World Way, Los Angeles, CA"
+            style="@style/WaypointsStyle"
+            app:layout_constraintStart_toStartOf="@id/waypointAnchor"
+            app:layout_constraintTop_toBottomOf="@id/waypointAnchor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <include
+        layout="@layout/view_divider"
+        app:layout_constraintTop_toBottomOf="@id/waypointAddress"
+        android:layout_width="match_parent"
+        android:layout_height="2dp" />
+
+</LinearLayout>

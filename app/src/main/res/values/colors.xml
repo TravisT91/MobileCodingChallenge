@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="colorPrimary">#1A4A7A</color>
+    <color name="colorPrimaryDark">@color/colorPrimary</color>
+    <color name="colorControlNormal">@color/white</color>
+    <color name="colorAccent">#FF29BEE7</color>
+    <color name="textGrey">#FF5b6b6d</color>
+    <color name="dividerGrey">#E9E9EF</color>
+    <color name="startMarkerGreen">#FF00FF00</color>
+    <color name="endMarkerRed">#FFFF0000</color>
+    <color name="cancel_trip_button_color">#FFFF0000</color>
+    <color name="progressBackgroundColor">#AA606060</color>
+    <color name="hsdBackgroundColor">#AA606060</color>
+</resources>

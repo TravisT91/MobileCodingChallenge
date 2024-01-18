@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="DayDateStyle" parent="TextAppearance.AppCompat.Subhead">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="DialogTitleStyle" parent="TextAppearance.AppCompat.Subhead">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="DialogMessageStyle" parent="TextAppearance.AppCompat.Small">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/textGrey</item>
+    </style>
+
+    <style name="TripHeaderStartTimeStyle" parent="TextAppearance.AppCompat.Small">
+        <item name="android:textColor">@color/textGrey</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TripCardStartTimeStyle" parent="TextAppearance.AppCompat.Subhead">
+        <item name="android:textColor">@color/textGrey</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TripHeaderEndTimeStyle" parent="TextAppearance.AppCompat.Small">
+        <item name="android:textColor">@color/textGrey</item>
+    </style>
+
+    <style name="TripCardEndTimeStyle" parent="TextAppearance.AppCompat.Subhead">
+        <item name="android:textColor">@color/textGrey</item>
+    </style>
+
+    <style name="TripCardRidersStyle" parent="TextAppearance.AppCompat.Small">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/textGrey</item>
+    </style>
+
+    <style name="EstimatedLabelStyle" parent="TextAppearance.AppCompat.Small">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/textGrey</item>
+    </style>
+
+    <style name="WaypointsStyle" parent="TextAppearance.AppCompat.Small">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/textGrey</item>
+    </style>
+
+    <style name="ButtonStyle" parent="TextAppearance.AppCompat.Widget.Button">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/cancel_trip_button_color</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Button</item>
+    </style>
+
+    <style name="EstLabelStyle" parent="TextAppearance.AppCompat.Small">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="EstimatedAmountStyle" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+</resources>
